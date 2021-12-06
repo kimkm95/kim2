@@ -6,7 +6,7 @@ const pool = mysql.createPool({
     host: 'softsquareddb.c30jwxmcu9gi.ap-northeast-2.rds.amazonaws.com',
     user: 'master',
     port: '3306',
-    password: '',
+    password: 'Rlarudals12!',
     database: 'DiaryDB'
 });
 

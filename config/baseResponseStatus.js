@@ -17,6 +17,9 @@ module.exports = {
     USER_PASSWORD_UPDATE_SUCCESS  : { "isSuccess": true, "code": 1013, "message":"비밀번호 수정 성공" },
     USER_KAKAO_SIGNUP_SUCCESS : { "isSuccess": true, "code": 1014, "message":"카카오 계정생성 성공" },
     USER_KAKAO_SIGNIN_SUCCESS : { "isSuccess": true, "code": 1015, "message":"카카오 계정로그인 성공" },
+    MYCOLOR_WITHDRAW_SUCCESS : { "isSuccess": true, "code": 1016, "message":"MyColor 삭제 성공" },
+    MYCOLOR_RESET_SUCCESS : { "isSuccess": true, "code": 1017, "message":"MyColor 리셋 성공" },
+    MYDIARY_WITHDRAW_SUCCESS : { "isSuccess": true, "code": 1018, "message":"다이어리 삭제 성공" },
 
     // Common
     TOKEN_EMPTY : { "isSuccess": false, "code": 2000, "message":"JWT 토큰을 입력해주세요." },
@@ -61,6 +64,8 @@ module.exports = {
     USER_DIARYIMG_NOT_EXIST : { "isSuccess": false, "code": 2032, "message":"일치하는 다이어리 이미지 값이 없습니다." },
     SIGNUP_PASSWORD2_EMPTY : { "isSuccess": false, "code": 2033, "message": "2차 비밀번호를 입력 해주세요." },
     SIGNUP_PASSWORDS_UNMATCHED : { "isSuccess": false, "code": 2034, "message": "비밀번호가 일치하지 않습니다." },
+    SIGNUP_MINIPASSWORDS_UNMATCHED : { "isSuccess": false, "code": 2035, "message": "미니코드가 일치하지 않습니다." },
+    DIARY_IMGARR_UNMATCHED : { "isSuccess": false, "code": 2036, "message": "변경하려는 diaryImgId의 개수와 diaryImgUrl개수가 일치하지 않습니다." },
 
 
     // Response error
@@ -101,6 +106,16 @@ module.exports = {
     CALENDER_OUT_OF_RANGE : { "isSuccess": false, "code": 3033, "message":"조회하신 page는 전체 달력 범위를 넘었습니다. 2021년 ~ 2031년" },
     DIARYIMGID_OUT_OF_RANGE : { "isSuccess": false, "code": 3034, "message":"다이어리 이미지 인덱스 값이 전체 다이어리 범위를 넘었습니다." },
     ACCESS_TOKEN_FAILURE : { "isSuccess": false, "code": 3035, "message":"잘못된 엑세스 토큰입니다." },
+    USER_DIARYRECORD_NOT_EXIST :  { "isSuccess": false, "code": 3036, "message": "등록된 감정기록이 없습니다." },
+    USER_MYCOLORID_EMPTY : { "isSuccess": false, "code": 3037, "message":"myColorId 값을 입력해주세요." },
+    USER_STATUS_ERROR_TYPE : { "isSuccess": false, "code": 3038, "message":"상태값 형식을 Y/ N로 정확하게 입력해주세요." },
+    SIGNUP_MYCOLORID_UNMATCHED : { "isSuccess": false, "code": 2039, "message": "내가 작성한 마이컬러가 아닙니다. myColorId를 확인해 주세요" },
+    USER_MYCOLORID_EMPTY_AND_OVERPOSTING : { "isSuccess": false, "code": 2040, "message": "등록할 수 있는 컬러 20개를 모두 채웠습니다. 변경을 위해 myColorId를 입력해 주세요" },
+    SIGNUP_PAGE_ERROR_TYPE : { "isSuccess": false, "code": 3041, "message":"PAGE 형식을 숫자로 정확하게 입력해주세요." },
+    SIGNUP_DIARYID_ERROR_TYPE : { "isSuccess": false, "code": 3042, "message":"DIARYID 형식을 숫자로 정확하게 입력해주세요." },
+    SIGNUP_DIARYIMGID_ERROR_TYPE : { "isSuccess": false, "code": 3043, "message":"DIARYIMGID 형식을 숫자로 정확하게 입력해주세요." },
+    DIARY_CONTENT_LENGTH : { "isSuccess": false, "code": 3044, "message":"CONTENT길이가 10000자를 초과하였습니다." },
+    DIARY_DELETE_TARGET_NOT_EXIST :  { "isSuccess": false, "code": 3045, "message": "삭제하려는 이미지가 존재하지 않습니다." },
 
     //Connection, Transaction 등의 서버 오류
     DB_ERROR : { "isSuccess": false, "code": 4000, "message": "데이터 베이스 에러"},
